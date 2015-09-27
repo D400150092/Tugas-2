@@ -1,0 +1,42 @@
+#include <iostream.h>
+#include <math.h>
+using namespace.std;
+
+class akar{
+public:
+int x_1,x_2,x_3,deter;
+};
+
+main()
+{
+float x1,x2;
+akar root;
+cout<<"Masukkan nilai a:\n";
+cin root.x_1;
+cout <<"Masukkan nilai b:\n";
+cin root.x_2;
+cout<<"Masukkan nilai c:\n";
+cin root.x_3;
+root.deter=(root.x_2*root.x_2)-(4*root.x_1*root.x_3);
+cout<<"\nNilai Determinan ="<<root.deter<<"\n";
+
+if (root.deter>0)
+{
+x1=(-root.x_2+(sqrt(root.deter)))/(2*root.x_1);
+x2=(-root.x_2-(sqrt(root.deter)))/(2*root.x_1);
+cout<<"nilai x1="<<x1<<"\n";
+cout<<"nilai x2="<<x1<<\n";
+}
+else if (root.deter=0)
+{
+x1=root.x_2/2*root.x_1;
+x2=x1
+}
+else
+{
+cout<<"Determinan kurang dari 0.\nPersamaan Kuadrat tidak mempunyai akar\n";
+}
+cout<<"\n\n";
+system("pause");
+return 0;
+}
